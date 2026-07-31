@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <title>Website Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">FHAZRIL.M</a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#skill" class="nav-link">Skill</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="container home-container">
+            <div class="home-photo">
+                <img src="fazril.jpeg" alt="Foto Profil">
+            </div>
+            <div class="home-info">
+                <h1>Halo, Saya <span>Muhamad Fhazril Maulana</span></h1>
+                <h3>Web Developer & Designer</h3>
+                <p>Selamat datang di portofolio saya. Saya adalah seorang pengembang web yang berfokus pada pembuatan
+                    situs web yang responsif, interaktif, dan berorientasi pada pengguna. Saya senang mengubah ide
+                    kompleks menjadi desain kode yang bersih dan indah.</p>
+                <div class="scroll-gallery">
+                    <a href="#scrollbottom" class="btn">Lihat Gallery</a>
+                </div>
+                   
+            </div>
+        </div>
+    </section>
+
+    <section id="skill" class="section">
+        <div class="container">
+            <h2 class="section-title">Keterampilan Saya</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5 text-html"></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt text-css"></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js text-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-regular fa-object-group"></i>
+                    <h3>Design</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div id="scrollbottom"></div>
+        <div class="container">
+            <h2 class="section-title">Galeri Proyek</h2>
+            <div class="gallery-grid">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="poster.jpeg" alt="Poster">
+                    <div class="gallery-overlay">
+                        <h3>Poster</h3>
+                    </div>
+                </div>
+                 <div class="gallery-item">
+                    <img src="nilai.png" alt="Tabel Nilai Siswa">
+                    <div class="gallery-overlay">
+                        <h3>Tabel Nilai Siswa</h3>
+                    </div>
+                </div>
+                 <div class="gallery-item">
+                    <img src="toko.png" alt="Website Toko">
+                    <div class="gallery-overlay">
+                        <h3>Website Toko</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="virtual.jpeg" alt="Poster Virtual Reality">
+                    <div class="gallery-overlay">
+                        <h3>Virtual Reality</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-box">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" placeholder="Nama Lengkap">
+                        <span class="error-msg" id="nameError">Nama harus diisi!</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Alamat Email">
+                        <span class="error-msg" id="emailError">Email tidak valid atau kosong!</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" rows="5" placeholder="Tulis pesan Anda di sini..."></textarea>
+                        <span class="error-msg" id="messageError">Pesan tidak boleh kosong!</span>
+                    </div>
+                    <button type="submit" class="btn-submit">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <button id="scrollToTop" title="Kembali ke atas"><i class="fas fa-arrow-up"></i></button>
+
+    <div id="galleryModal" class="modal">`
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="modalCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        © 2026 portofolio Website | By Muhamad Fhazril Maulana
+    </footer>
+</body>
+</html>
